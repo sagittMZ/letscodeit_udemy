@@ -6,10 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import static com.action.pechatka_develop.ReaderExcel.getBOLoginFromFile;
-import static com.action.pechatka_develop.ReaderExcel.getBOPasswordFromFile;
+
 
 public class BOLoginPage {
+
+
+    private String boPasswordFromFile;
 
     public BOLoginPage(WebDriver driver) {
         PageFactory.initElements(driver,this);
@@ -29,15 +31,14 @@ public class BOLoginPage {
         return BOSignUpButtonName;
     }
     public void inputBOLogin() {
-       boLoginField.sendKeys(getBOLoginFromFile());
+        boLoginField.sendKeys(ReaderExcel.boLoginFromFile);
     }
     public void inputBOPassword() {
-        boLoginField.sendKeys(getBOPasswordFromFile());
+        boLoginField.sendKeys(ReaderExcel.boPasswordFromFile);
     }
     public void clickBOLoginButton() {
         boLoginButton.click();
     }
-
     /*public void inputBOLogin(String boLoginFromFile) {
         boLoginField.sendKeys(boLoginFromFile);
     }

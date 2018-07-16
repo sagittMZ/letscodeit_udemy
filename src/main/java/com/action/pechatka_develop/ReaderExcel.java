@@ -1,12 +1,13 @@
-package com.action.pechatka_develop;
 
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+        package com.action.pechatka_develop;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+        import org.apache.poi.xssf.usermodel.XSSFRow;
+        import org.apache.poi.xssf.usermodel.XSSFSheet;
+        import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+        import java.io.File;
+        import java.io.FileInputStream;
+        import java.io.IOException;
 
 public class ReaderExcel {
     public static String boLoginFromFile = "";
@@ -15,7 +16,8 @@ public class ReaderExcel {
     public static void main(String[] args) {
         ReaderExcel readerExcel = new ReaderExcel(); // получаю- сначала объект так называемой рабочей книги excel, инициализируя его объектом FileInputStream, открывающим поток ввода связанный с моим файлом
         readerExcel.getDataExcel("list1","admin"); //  вызываю у Workbook метод getSheet(sheetName) и таким образом получаю уже объект нужного листа рабочей книги
-
+        readerExcel.getBOLoginFromFile();
+        readerExcel.getBOPasswordFromFile();
         System.out.println("login is: "+boLoginFromFile +" and password is: "+ boPasswordFromFile);
     }
     public void readExcel(String sheetName, String boUserRole) throws IOException {
@@ -40,10 +42,10 @@ public class ReaderExcel {
         }
         workbook.close();
     }
-    public static String getBOLoginFromFile(){
+    public String getBOLoginFromFile(){
         return boLoginFromFile;
     }
-    public static String getBOPasswordFromFile(){
+    public String getBOPasswordFromFile(){
         return boPasswordFromFile;
     }
     private void getDataExcel(String sheet, String boUserRole) {
