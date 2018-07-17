@@ -1,7 +1,5 @@
 package com.action.pechatka_develop.tests;
 
-
-
 import com.action.pechatka_develop.pages.BOLoginPage;
 import com.action.pechatka_develop.pages.BOMainPage;
 import org.junit.AfterClass;
@@ -13,17 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
 
-
-
-
 public class BOLoginTests {
 
-    //public static WebDriverWait wait;
     public static WebDriver driver;
     public static BOLoginPage boLoginPage;
     public static BOMainPage boMainPage;
-
-
     @BeforeClass
     public static void setup(){
         ChromeOptions options = new ChromeOptions();
@@ -32,12 +24,10 @@ public class BOLoginTests {
         driver = new ChromeDriver(options);
         boLoginPage = new BOLoginPage(driver);
         boMainPage = new BOMainPage(driver);
-        //wait = new WebDriverWait(driver, 3);
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("https://www.develop.vmcl.ru/backend/");
     }
-
     @Test
     public void boLoginTest(){
         boLoginPage.inputBOLogin();
@@ -46,7 +36,6 @@ public class BOLoginTests {
         String BOSiteName = BOMainPage.getBOSiteName();
         Assert.assertEquals(" Дефолтный сайт", BOSiteName);
     }
-
     @AfterClass
     public static void driverQuit(){
         boMainPage.clickboUserIcon();
