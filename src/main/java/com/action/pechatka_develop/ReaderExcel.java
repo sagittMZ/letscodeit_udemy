@@ -12,13 +12,12 @@
 public class ReaderExcel {
     public static String boLoginFromFile = "";
     public static String boPasswordFromFile = "";
+    /*public static String boPasswordFromFile = "";*/
     private File file = new File("e:\\sagitt\\work\\files for selenium\\dev_authset\\auth_set.xlsx");
     public static void main(String[] args) {
         ReaderExcel readerExcel = new ReaderExcel(); // получаю- сначала объект так называемой рабочей книги excel, инициализируя его объектом FileInputStream, открывающим поток ввода связанный с моим файлом
-        readerExcel.getDataExcel("list1","admin"); //  вызываю у Workbook метод getSheet(sheetName) и таким образом получаю уже объект нужного листа рабочей книги
-        readerExcel.getBOLoginFromFile();
-        readerExcel.getBOPasswordFromFile();
-        System.out.println("login is: "+boLoginFromFile +" and password is: "+ boPasswordFromFile);
+        readerExcel.getDataExcel("list1","freelanser"); //  вызываю у Workbook метод getSheet(sheetName) и таким образом получаю уже объект нужного листа рабочей книги
+        System.out.println("login is: "+boLoginFromFile +" and password is: "+ boPasswordFromFile); // эта строчка просто проверяет, что все работает и берется верная пара логин/пароль
     }
     public void readExcel(String sheetName, String boUserRole) throws IOException {
         /*Создание объекта FileInputStream требует наличия обработчика исключений.
@@ -26,7 +25,8 @@ public class ReaderExcel {
         throws IOException*/
         XSSFWorkbook workbook =  new XSSFWorkbook(new FileInputStream(file));
         XSSFSheet sheet = workbook.getSheet(sheetName);
-
+/*        String boLoginFromFile = "";
+        String boPasswordFromFile = "";*/
         /*Доступ к строкам таблицы происходит по индексу начиная с «0».
         Чтобы не вывалиться за пределы таблицы в цикле стоит ограничение индекса r<sheet.getLastRowNum()+1.*/
         for(int r=0; r<sheet.getLastRowNum()+1; r++) {
