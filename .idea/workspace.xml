@@ -27,8 +27,8 @@
           <file leaf-file-name="ReaderExcel.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/action/pechatka_develop/ReaderExcel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="346">
-                  <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+                <state relative-caret-position="765">
+                  <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -40,11 +40,23 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="BOLoginPage.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BOLoginTests.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/tests/BOLoginTests.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="556">
+                  <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BOLoginPage.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/pages/BOLoginPage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+                <state relative-caret-position="527">
+                  <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1038#1039#0" expanded="true" />
@@ -56,11 +68,16 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BOLoginTests.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/tests/BOLoginTests.java">
+          <file leaf-file-name="BOArticlePage.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/pages/BOArticlePage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="40">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" />
+                <state relative-caret-position="714">
+                  <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1461#1462#0" expanded="true" />
+                    <element signature="e#1493#1494#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -101,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/pages/BOLoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/tests/BOLoginTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/action/pechatka_develop/ReaderExcel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/pages/BOArticlePage.java" />
       </list>
     </option>
   </component>
@@ -413,7 +431,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
@@ -426,11 +444,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32978094" />
       <window_info anchor="bottom" id="Analyze Dataflow to" sideWeight="0.49946696" weight="0.32960895" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49946696" weight="0.32960895" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49413645" visible="true" weight="0.012290503" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49413645" visible="true" weight="0.012290503" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1663113" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.1663113" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -504,14 +522,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/tests/BOLoginTests.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="42" />
     </breakpoint-manager>
   </component>
@@ -537,6 +547,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -575,6 +588,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="46" column="15" lean-forward="true" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,6 +643,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="36" column="29" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -663,17 +682,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/tests/BOCreateArticleTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/tests/BOLoginTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="556">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/pages/BOLoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="527">
+          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1038#1039#0" expanded="true" />
@@ -686,10 +715,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/action/pechatka_develop/ReaderExcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        <state relative-caret-position="765">
+          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/action/pechatka_develop/pages/BOArticlePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+            <element signature="e#1493#1494#0" expanded="true" />
           </folding>
         </state>
       </provider>

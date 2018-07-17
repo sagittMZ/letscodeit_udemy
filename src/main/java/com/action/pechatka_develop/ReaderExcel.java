@@ -13,12 +13,6 @@ public class ReaderExcel {
     public static String boLoginFromFile = "";
     public static String boPasswordFromFile = "";
 
-    /*public static void main(String[] args) {
-        ReaderExcel readerExcel = new ReaderExcel(); // получаю объект рабочей книги excel, инициализируя его объектом FileInputStream, открывающим поток ввода связанный с моим файлом
-        readerExcel.getDataExcel("list1", "freelanser"); //  вызываю у Workbook метод getSheet(sheetName) и таким образом получаю уже объект нужного листа рабочей книги
-        System.out.println("login is: " + boLoginFromFile + " and password is: " + boPasswordFromFile); // эта строчка просто проверяет, что все работает и берется верная пара логин/пароль
-    }*/
-
     public static void readExcel(String sheetName, String boUserRole) throws IOException {
         /*Создание объекта FileInputStream требует наличия обработчика исключений.
         это делает метод, который будет вызывать readExcel с помощью оператора throws в сигнатуре метода readExcel:
@@ -34,9 +28,7 @@ public class ReaderExcel {
                 if (row.getCell(c).getStringCellValue().equals(boUserRole)) {
                     boLoginFromFile = row.getCell(c + 1).getStringCellValue();
                     boPasswordFromFile = row.getCell(c + 2).getStringCellValue();
-                    //break;
                 }
-              //  break;
             }
         }
         workbook.close();
