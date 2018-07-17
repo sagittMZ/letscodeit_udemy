@@ -34,9 +34,9 @@ public class ReaderExcel {
                 if (row.getCell(c).getStringCellValue().equals(boUserRole)) {
                     boLoginFromFile = row.getCell(c + 1).getStringCellValue();
                     boPasswordFromFile = row.getCell(c + 2).getStringCellValue();
-                    break;
+                    //break;
                 }
-                break;
+              //  break;
             }
         }
         workbook.close();

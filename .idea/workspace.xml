@@ -27,8 +27,8 @@
           <file leaf-file-name="ReaderExcel.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/action/pechatka_develop/ReaderExcel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="512">
-                  <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+                <state relative-caret-position="346">
+                  <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -248,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BOLoginTests.boLoginTest">
+  <component name="RunManager" selected="JUnit.BOLoginTests">
     <configuration name="BackendMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Backend.BackendMain" />
       <module name="letscodeit_udemy" />
@@ -360,8 +360,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BOLoginTests.boLoginTest" />
         <item itemvalue="JUnit.BOLoginTests" />
+        <item itemvalue="JUnit.BOLoginTests.boLoginTest" />
         <item itemvalue="Application.ReaderExcel" />
         <item itemvalue="Application.BackendMain" />
       </list>
@@ -381,9 +381,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BOLoginTests - 2018.07.17 at 16h 25m 57s.xml">
-      <configuration name="BOLoginTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BOLoginTests - 2018.07.17 at 16h 26m 27s.xml">
       <configuration name="BOLoginTests" configurationId="JUnit" />
     </history-entry>
@@ -411,9 +408,12 @@
     <history-entry file="BOLoginTests_boLoginTest - 2018.07.17 at 17h 46m 35s.xml">
       <configuration name="BOLoginTests.boLoginTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BOLoginTests - 2018.07.17 at 18h 32m 31s.xml">
+      <configuration name="BOLoginTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
@@ -686,8 +686,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/action/pechatka_develop/ReaderExcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        <state relative-caret-position="346">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
