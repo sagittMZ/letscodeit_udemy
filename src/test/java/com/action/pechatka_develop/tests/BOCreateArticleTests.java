@@ -1,10 +1,9 @@
 package com.action.pechatka_develop.tests;
 
-import com.action.pechatka_develop.ReaderExcel;
+
 import com.action.pechatka_develop.pages.BOArticlesListPage;
 import com.action.pechatka_develop.pages.BOCreateArticlePage;
 import com.action.pechatka_develop.pages.BOLoginPage;
-import com.action.pechatka_develop.pages.boArticlePage;
 import com.action.pechatka_develop.pages.BOMainPage;
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -23,6 +22,7 @@ public class BOCreateArticleTests {
     public static BOCreateArticlePage boCreateArticlePage;
     public static BOMainPage boMainPage;
     public static BOLoginPage boLoginPage;
+    public static BOArticlesListPage boArticlesListPage;
 
 
     @BeforeClass
@@ -57,18 +57,18 @@ public class BOCreateArticleTests {
 
     @Test
     public void boGoToCreateArticlePageTest(){
-        BOArticlesListPage.clickBOCreateArticleButton();
+        boArticlesListPage.clickBOCreateArticleButton();
         String BOListName = BOCreateArticlePage.getBOArticleCreatePageName();
         Assert.assertEquals("Добавить статью", BOListName);
     }
 
     @Test
     public void boCreateArticleTest(){
-        BOCreateArticlePage.fillArticleHeader();
-        BOCreateArticlePage.fillArticleAnnounce();
-        BOCreateArticlePage.fillArticleText();
-        BOCreateArticlePage.uploadArticleFile();
-        BOCreateArticlePage.clickBOArticleSaveButton();
+        boCreateArticlePage.fillArticleHeader();
+        boCreateArticlePage.fillArticleAnnounce();
+        boCreateArticlePage.fillArticleText();
+        boCreateArticlePage.uploadArticleFile();
+        boCreateArticlePage.clickBOArticleSaveButton();
         String BOArticleViewName = BOCreateArticlePage.getBOEditArticleButtonName();
         Assert.assertEquals(" Редактировать", BOArticleViewName);
     }
