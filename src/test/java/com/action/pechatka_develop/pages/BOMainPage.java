@@ -26,11 +26,18 @@ public class BOMainPage {
     @FindBy (xpath = "//a[@class='navbar-brand']")
     private static WebElement boSiteNameMP;
 
+    @FindBy (xpath = "//a[contains(text(),'Статьи')]")
+    private static WebElement boGoArticleListPage;
+
     public static String getBOSiteName() {
         String BOSiteName = boSiteNameMP.getText();
         return BOSiteName;
     }
     public void clickboLogoutLink() {
         boLogoutLink.click();
+    }
+
+    public void clickboGoArticleListPage() {
+        boGoArticleListPage.click();
     }
 }

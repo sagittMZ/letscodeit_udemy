@@ -7,12 +7,18 @@ import org.openqa.selenium.support.PageFactory;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class BOArticlePage {
+public class BOCreateArticlePage {
 
-    public BOArticlePage(WebDriver driver) {
+    public BOCreateArticlePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
+
+    @FindBy(xpath = "//h1")
+    public static WebElement boCreateArticlePageName;
+
+    @FindBy(xpath = "//a[@class='btn btn-default']")
+    public static WebElement boEditArticleButtonName;
 
     public WebDriver driver;
     @FindBy(xpath = "//input[@id='Article_header']")
@@ -29,11 +35,15 @@ public class BOArticlePage {
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement boArticleSaveButton;
-    public static WebElement boSaveButtonName;
 
-    public static String getBOSaveButtonName() {
-        String BOSaveButtonName = boSaveButtonName.getText();
-        return BOSaveButtonName;
+    public static String getBOEditArticleButtonName() {
+        String BOEditArticleButtonName = boEditArticleButtonName.getText();
+        return BOEditArticleButtonName;
+    }
+
+    public static String getBOArticleCreatePageName() {
+        String BOArticleCreatePageName = boCreateArticlePageName.getText();
+        return BOArticleCreatePageName;
     }
     public void fillArticleHeader() {
         Date dateNow = new Date();
@@ -48,7 +58,7 @@ public class BOArticlePage {
 
     public void fillArticleText(){
         driver.switchTo().frame("form-attr-content_ifr");
-        boArticleAnnounce.sendKeys("test article text");
+        boArticleMainContent.sendKeys("test article text");
         driver.switchTo().parentFrame();
     }
 
@@ -58,8 +68,6 @@ public class BOArticlePage {
     }
 
     public void clickBOArticleSaveButton() {
-
-
         boArticleSaveButton.click();
     }
 
